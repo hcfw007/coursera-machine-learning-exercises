@@ -16,6 +16,10 @@ p = zeros(m, 1);
 %
 
 
+h = sigmoid(X * theta); 
+
+p(find(h > 0.5)) = 1;
+p(find(h < 0.5)) = 0;
 
 
 
